@@ -14,4 +14,6 @@ def print_alphabetical_ratings(filepath):
     for restaurant in sorted_restaurants:
         print "{} is rated at {}.".format(restaurant, restaurant_ratings[restaurant])
 
+    ratings_file.close()
+
 print_alphabetical_ratings(sys.argv[1])
